@@ -1,0 +1,109 @@
+/* @font-face {
+    font-family: "silk serif";
+    src: url("../fonts/silkserif-regular.ttf") format("truetype");
+} */
+
+*{
+    /* background-color: black; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-family:"Plain Light";
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    
+}
+#loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #0B0B0B;
+    padding: 25vh 11vw;
+}
+.line{
+    /* background-color: red; */
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 3vw;
+}
+#line1-part1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+#line1-part1 h5, h6{
+    font-size: 4.5vw;
+    font-family: "silk serif";
+    gap: 1vw;
+}
+.line h1{
+    /* padding-left: 1vw; */
+    font-size: 6.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+#line1-part1 h5{
+    width: 6vw;
+    text-align: right;
+    gap: 1vw;
+}
+.line h2{
+    /* padding-left: 1vw; */
+    font-size: 5.03vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    opacity: 0;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loadAnime {
+    0%{
+        font-family: "Plain Light";
+        -webkit-text-stroke: 1px white;
+        color: white;
+        font-weight: 500;
+        opacity: 1;
+
+    }
+    47%{
+        font-family: "Plain Light";
+        -webkit-text-stroke: 1px white;
+        color: white;
+        font-weight: 500;
+        opacity: 0;
+
+    }
+    50%{
+        font-family: "silk serif";
+        -webkit-text-stroke: 1px white;
+        color: transparent;
+        font-weight: 500;
+        opacity: 1;
+
+    }
+    100%{
+        font-family: "silk serif";
+        -webkit-text-stroke: white;
+        color: transparent;
+        opacity: 0;
+    }
+}
+/* #0B0B0B */
+#main{
+    position: relative;
+    background-color: #0B0B0B;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+}
